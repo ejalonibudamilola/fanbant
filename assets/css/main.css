@@ -902,6 +902,11 @@ section {
   text-align: center;
 }
 
+.team .team-member .member-info2 {
+  padding-top: 5px
+}
+
+
 .team .team-member .member-info h4 {
   font-weight: 700;
   margin-bottom: 5px;
@@ -909,11 +914,20 @@ section {
   color: var(--color-secondary);
 }
 
+
 .team .team-member .member-info span {
   display: block;
   font-size: 13px;
   font-weight: 400;
   color: #6c757d;
+}
+
+.team .team-member .member-info2 span {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-secondary);
+  text-align: center;
 }
 
 .team .team-member .member-info p {
