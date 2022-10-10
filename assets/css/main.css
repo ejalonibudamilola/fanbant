@@ -1,15 +1,3 @@
-/**
-* Template Name: Nova - v1.1.0
-* Template URL: https://bootstrapmade.com/nova-bootstrap-business-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# Set main reusable colors and fonts using CSS variables
-# Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
---------------------------------------------------------------*/
-/* Fonts */
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Montserrat", sans-serif;
@@ -464,12 +452,12 @@ section {
     margin-left: 5px;
   }
 
-  /* .navbar a:hover,
+  .navbar a:hover,
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
     color: #fff;
-  } */
+  }
 
   .navbar .dropdown ul,
   .navbar .dropdown .dropdown ul {
@@ -1297,37 +1285,37 @@ section {
   font-size: 14px;
 }
 
-.contact .php-email-form {
+.contact .contactForm {
   width: 100%;
 }
 
-.contact .php-email-form .form-group {
-  padding-bottom: 8px;
+.contact .contactForm .form-group {
+  padding-bottom: 20px;
 }
 
-.contact .php-email-form .error-message {
+/* .contact .php-email-form .error-message {
   display: none;
   color: #fff;
   background: #df1529;
   text-align: left;
   padding: 15px;
   font-weight: 600;
-}
+} */
 
-.contact .php-email-form .error-message br+br {
+/* .contact .php-email-form .error-message br+br {
   margin-top: 25px;
-}
+} */
 
-.contact .php-email-form .sent-message {
+/* .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
   background: #059652;
   text-align: center;
   padding: 15px;
   font-weight: 600;
-}
+} */
 
-.contact .php-email-form .loading {
+/* .contact .php-email-form .loading {
   display: none;
   background: #fff;
   text-align: center;
@@ -1345,26 +1333,26 @@ section {
   border-top-color: #fff;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
-}
+} */
 
-.contact .php-email-form input,
-.contact .php-email-form textarea {
+.contact .contactForm input,
+.contact .contactForm textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
   padding: 12px 15px;
 }
 
-.contact .php-email-form input:focus,
-.contact .php-email-form textarea:focus {
+.contact .contactForm input:focus,
+.contact .contactForm textarea:focus {
   border-color: var(--color-primary);
 }
 
-.contact .php-email-form textarea {
+.contact .contactForm textarea {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .contactForm button[type=submit] {
   background: #2aa5df;
   border: 0;
   padding: 12px 40px;
@@ -1372,7 +1360,7 @@ section {
   transition: 0.4s;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .contactForm button[type=submit]:hover {
   background: var(--color-primary);
 }
 
@@ -1639,4 +1627,8 @@ section {
 #footer .copyright {
   text-align: center;
   padding-top: 30px;
+}
+
+.error{
+	color:red
 }
