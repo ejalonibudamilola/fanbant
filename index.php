@@ -5,19 +5,18 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>FECL</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Fanbat Engineering Limited</title>
+  <meta content="Fanbat Engineering Limited is an Engineering company dedicated to 
+   providing high quality and cost-effective Mechanical, Electrical, Solar, Civil and Power 
+   Engineering services to customers." name="description">
+  <meta content="Fanbat Engineering Limited" name="keywords">
 
-  <!-- Favicons -->
   <link href="assets/img/logo.png" rel="icon">
 
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -25,7 +24,6 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
 </head>
@@ -36,10 +34,8 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
+      <a href="index.php" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
-        <!-- <h1 class="d-flex align-items-center">FECL</h1> -->
       </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -47,12 +43,12 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" class="active">HOME</a></li>
+          <li><a href="index.php" class="active">HOME</a></li>
           <li><a href="#why-us" class="navlink">ABOUT</a></li>
           <li><a href="#services-list" class="navlink">SERVICES</a></li>
           <li><a href="#contact" class="navlink">CONTACT</a></li>
           <li><a href="#team" class="navlink">TEAM</a></li>
-          <li><a href="project.html" class="navlink">PROJECT</a></li>
+          <li><a href="project.php" class="navlink">PROJECT</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -432,36 +428,37 @@
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
 
-            <form class="contactForm">
+            <form class="contactForm" onsubmit="ValidateForm()">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="lastname" class="form-control" id="lastname" placeholder="Lastname">
+                  <input type="text" name="lastname" class="form-control" id="lastname" placeholder="Lastame">
+                  <span id="clastname" class="error" font-weight-bold></span>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
                   <input type="text" class="form-control" name="firstname" id="firstname" placeholder="Firstname">
+                  <span id="cfirstname" class="error" font-weight-bold></span>
                 </div>
               </div>
               <div class="form-group mt-3">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
-              </div>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
+                <span id="cemail" class="error" font-weight-bold></span>
+            </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message"></textarea>
+                <span id="cmessage" class="error" font-weight-bold></span>
+              </div>              
+              <div class="text-center">
+                <button type="submit" id="contactUs">Send Message</button>
               </div>
-              <!-- <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div> -->
-              
             </form>
-            <div class="text-center"><button id="contactUs">Send Message</button></div>
 
           </div><!-- End Contact Form -->
 
         </div>
 
       </div>
-    </section><!-- End Contact Section -->    
+    </section><!-- End Contact Section -->
+
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -482,10 +479,10 @@
           <div class="col-md-4 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.php">Home</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#why-us">About us</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#services-list">Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="project.html">Projects</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="project.php">Projects</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#team">Team</a></li>
             </ul>
           </div>
@@ -524,6 +521,9 @@
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader"></div>
+
+  
+  <!-- ======= Modal ======= -->
   <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -531,7 +531,7 @@
           Your Message has been successfully sent
         </div>
         <div class="modal-footer">
-          <button style="text-align: center !important;" type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+          <button id="successBtn" style="text-align: center !important;" type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
         </div>
       </div>
     </div>
@@ -549,28 +549,91 @@
       </div>
     </div>
   </div>
+<!-- End Modal -->
 
-  
-
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/js/jquery.min.js"></script>
-
-
-  <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
-  <script>
-    $("#contactUs").click(function(e){
-      console.log("Hello")
-      $('#failureModal').modal('show');
+
+
+  <script type="text/javascript">
+      function ValidateForm(){
+        console.log("Validating");     
+        var lastname = $("#lastname").val();   
+        var firstname = $("#firstname").val();  
+        var visitorMail = $("#email").val(); 
+        var message = $("#message").val();
+        var letter = /^[a-zA-Z]+$/;
+        var email = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        var valid = true;
+        removeMessage();
+        
+        if(!letter.test(lastname)){
+                event.preventDefault();
+                document.getElementById("clastname").innerHTML="Input a valid Lastname";
+                valid=false;
+        }
+        
+        if(!letter.test(firstname)){
+                event.preventDefault();
+                document.getElementById("cfirstname").innerHTML="Input a valid Firstname";
+                valid=false;
+        }
+        
+        if(!email.test(visitorMail)){
+                event.preventDefault();
+                document.getElementById("cemail").innerHTML="Input a valid Email Address";
+                valid=false;
+        }
+        
+        if(message == ""){
+                event.preventDefault();
+                document.getElementById("cmessage").innerHTML="Please type your message";
+                valid=false;
+        } 
+        return valid;        
+      }
+
+    function removeMessage(){
+        var eremove = document.querySelectorAll(".error");
+        [].forEach.call(eremove, function(el){
+            el.innerHTML="";
+        });
+    }
+
+
+    $('#contactUs').click(function(e){
+            e.preventDefault();
+                var valid = ValidateForm();
+                if (valid===true){
+                  var form = $(this).closest('form');
+                  var data = form.serialize();
+                  var url = "contact.php";
+                  $.ajax({
+                    type:'post',
+                    url:url,
+                    data: data,
+                    success: function(response){
+                      $('#successModal').modal('show');                      
+                    },
+                    error : function(request,error){
+                      $('#failureModal').modal('show');
+                    }   
+                  });
+                }               
     });
+    
+    $('#successBtn').click(function(e){
+      location.reload();
+    });
+
   </script>
+
 </body>
 
 </html>
